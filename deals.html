@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Ignite Offers — Exclusive discounts on premium gadgets, professional gear, and elite apparel."/>
+  <title>Offers & Deals — Ignite Marketplace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="src/css/style.css"/>
+  <link rel="stylesheet" href="src/css/pages.css"/>
+  <link rel="stylesheet" href="src/css/animations.css"/>
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg">
+    <div class="container-fluid px-4">
+      <a href="index.html" class="nav-brand">
+        <span class="brand-flame"><i class="bi bi-fire"></i></span>
+        <span>Ignite</span>
+      </a>
+
+      <button
+        class="navbar-toggler border-0 ms-auto me-2"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navLinks"
+        aria-label="Toggle navigation"
+      >
+        <i class="bi bi-list fs-3 text-white"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navLinks">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a href="shop.html" class="nav-link-item">Shop</a></li>
+          <li class="nav-item"><a href="index.html#features" class="nav-link-item">Features</a></li>
+          <li class="nav-item"><a href="deals.html" class="nav-link-item active">Offers</a></li>
+          <li class="nav-item"><a href="inbox.html" class="nav-link-item">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-flex align-items-center gap-3">
+        <a href="signin.html" class="nav-link-item text-white-50">Sign In</a>
+        <a href="#products" class="btn-primary-ignite">Shop Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Deals Hero -->
+  <div class="deals-hero">
+    <div class="deals-hero-glow"></div>
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-6 reveal-stagger">
+          <div class="deals-eyebrow"><i class="bi bi-lightning-charge-fill"></i> Limited Time Offers</div>
+          <h1 class="deals-hero-title">Flash <span>Deals</span> &amp; Exclusive Discounts</h1>
+          <p class="deals-hero-sub">Handpicked savings on premium business essentials. These prices won't last — shop before they're gone.</p>
+        </div>
+        <div class="col-lg-5 mt-4 mt-lg-0 reveal-stagger">
+          <div class="deals-countdown-card">
+            <p class="countdown-label">Flash Sale Ends In</p>
+            <div class="countdown-display">
+              <div class="countdown-unit"><span class="countdown-num" id="cdHours">03</span><span class="countdown-unit-label">HRS</span></div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-unit"><span class="countdown-num" id="cdMins">45</span><span class="countdown-unit-label">MIN</span></div>
+              <div class="countdown-sep">:</div>
+              <div class="countdown-unit"><span class="countdown-num" id="cdSecs">22</span><span class="countdown-unit-label">SEC</span></div>
+            </div>
+            <p class="countdown-note">Prices revert after timer ends. No extensions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Deal of the Day -->
+  <section class="deal-of-day">
+    <div class="container">
+      <div class="dotd-card reveal-stagger">
+        <div class="dotd-badge"><i class="bi bi-star-fill"></i> Deal of the Day</div>
+        <div class="row g-0 align-items-center">
+          <div class="col-md-5">
+            <div class="dotd-img-wrap">
+              <img src="public/images/product-headphones.png" alt="ProNoise ANC Headphones" class="dotd-img"
+                onerror="this.src='https://placehold.co/600x400/1a1f2e/ff6b35?text=Deal+of+the+Day'">
+              <div class="dotd-discount-chip">-18%</div>
+            </div>
+          </div>
+          <div class="col-md-7 p-4 p-md-5">
+            <p class="dotd-category">Electronics</p>
+            <h2 class="dotd-name">ProNoise ANC Headphones</h2>
+            <p class="dotd-desc">Industry-leading 40dB active noise cancellation with 40-hour battery life. Perfect for focus, calls, and deep work. Today only at this price.</p>
+            <div class="dotd-features">
+              <span><i class="bi bi-check-circle-fill"></i> 40hr battery</span>
+              <span><i class="bi bi-check-circle-fill"></i> Multipoint BT 5.3</span>
+              <span><i class="bi bi-check-circle-fill"></i> Foldable design</span>
+            </div>
+            <div class="dotd-pricing">
+              <span class="dotd-price">$329.99</span>
+              <span class="dotd-orig">$399.99</span>
+              <span class="dotd-save">You save $70.00</span>
+            </div>
+            <div class="dotd-stock-bar-wrap">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="dotd-stock-label">Stock remaining</span>
+                <span class="dotd-stock-label dotd-stock-count">28 / 100 units</span>
+              </div>
+              <div class="dotd-stock-bar"><div class="dotd-stock-fill" style="width:72%"></div></div>
+            </div>
+            <button class="btn-ignite mt-3 dotd-cta" data-id="2">
+              <i class="bi bi-bag-plus-fill me-2"></i> Add to Cart — Today Only
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flash Deals Grid -->
+  <section id="flashDeals">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4">
+        <div>
+          <h2 class="section-title"><i class="bi bi-lightning-charge text-warning me-2"></i>Flash Deals</h2>
+          <p class="section-sub">All items below are discounted. Grab them before time runs out.</p>
+        </div>
+        <a href="shop.html" class="btn-outline-ignite d-none d-md-inline-flex">View All Products <i class="bi bi-arrow-right ms-1"></i></a>
+      </div>
+      <div class="row g-4 reveal-stagger" id="dealsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Member Exclusive Deals Banner -->
+  <section class="member-deal-banner">
+    <div class="container">
+      <div class="member-deal-card reveal-stagger">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <div class="member-badge"><i class="bi bi-shield-check"></i> Members Only</div>
+            <h2>Unlock <span>Extra 15%</span> Off Every Order</h2>
+            <p>Create your free Ignite account and access exclusive member pricing, early access to deals, and priority shipping.</p>
+          </div>
+          <div class="col-lg-5 text-lg-end mt-4 mt-lg-0">
+            <a href="signin.html#register" class="btn-ignite btn-lg-ignite">
+              <i class="bi bi-person-plus me-2"></i> Create Free Account
+            </a>
+            <p class="member-note mt-2">Already have an account? <a href="signin.html">Sign in →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="footer-brand"><span class="brand-flame"><i class="bi bi-fire me-1"></i>Ignite</span></div>
+          <p class="footer-tagline">Premium business essentials for the modern professional.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2"><p class="footer-heading">Shop</p><ul class="footer-links"><li><a href="shop.html">All Products</a></li><li><a href="deals.html">Deals</a></li></ul></div>
+        <div class="col-6 col-lg-2"><p class="footer-heading">Company</p><ul class="footer-links"><li><a href="#">About</a></li><li><a href="#">Blog</a></li></ul></div>
+        <div class="col-6 col-lg-2"><p class="footer-heading">Account</p><ul class="footer-links"><li><a href="signin.html">Sign In</a></li><li><a href="signin.html#register">Register</a></li></ul></div>
+      </div>
+      <div class="footer-divider"></div>
+        <p class="footer-copy mb-0">&copy; 2026 Ignite Commerce Inc. | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Overlay & Drawer -->
+  <div id="cartOverlay"></div>
+  <div id="cartDrawer" role="dialog" aria-label="Shopping Cart">
+    <div class="cart-header"><h5><i class="bi bi-bag me-2"></i> Your Cart</h5><button id="cartCloseBtn" aria-label="Close cart"><i class="bi bi-x-lg"></i></button></div>
+    <div id="cartItemsContainer"></div>
+    <div id="cartEmpty" class="d-none"><i class="bi bi-bag-x"></i><p>Your cart is empty.<br>Add something premium!</p></div>
+    <div id="cartFooter" class="d-none">
+      <div class="cart-totals">
+        <p><span>Subtotal</span><span id="cartSubtotal">$0.00</span></p>
+        <p><span>Shipping</span><span id="cartShipping">—</span></p>
+        <p><span>Tax</span><span id="cartTax">$0.00</span></p>
+        <p class="cart-grand"><span>Total</span><span id="cartTotal">$0.00</span></p>
+      </div>
+      <button class="btn-ignite" id="checkoutBtn"><i class="bi bi-credit-card-2-front"></i> Checkout</button>
+      <button id="clearCartBtn">Clear cart</button>
+    </div>
+  </div>
+
+  <div class="modal fade" id="productModal" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-centered"><div class="modal-content"><div class="modal-header border-0 pb-0"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body p-0" id="productModalBody"></div></div></div></div>
+  <div id="toastContainer" aria-live="polite"></div>
+  <button id="backToTop" aria-label="Back to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Ignite App (Modular) -->
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ignite — Premium gadgets, lifestyle apparel, and professional gear. Discover top-tier equipment for the modern executive."
+    />
+    <meta property="og:title" content="Ignite — Premium Gadgets & Apparel" />
+    <meta
+      property="og:description"
+      content="High-end products for professionals."
+    />
+    <title>Ignite — Premium Gadgets & Apparel</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
+  </head>
+
+  <body>
+    <div class="grain-overlay" aria-hidden="true"></div>
+
+
+    <!-- ── Navbar ────────────────────────────────────────────── -->
+    <nav id="mainNav" class="navbar navbar-expand-lg">
+      <div class="container-fluid px-4">
+        <!-- Brand -->
+        <a href="index.html" class="nav-brand">
+          <span class="brand-flame"><i class="bi bi-fire"></i></span>
+          <span>Ignite</span>
+        </a>
+
+        <!-- Mobile Toggler -->
+        <button
+          class="navbar-toggler border-0 ms-auto me-2"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinks"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-3 text-white"></i>
+        </button>
+
+        <!-- Nav Links (Centered) -->
+        <div class="collapse navbar-collapse justify-content-center" id="navLinks">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link-item" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-item" href="index.html#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-item" href="deals.html">Offers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link-item" href="inbox.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Action -->
+        <div class="d-none d-lg-flex align-items-center gap-3">
+          <a href="signin.html" class="nav-link-item text-white-50">Sign In</a>
+          <a href="#products" class="btn-primary-ignite">
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- ── Hero ───────────────────────────────────────────────── -->
+    <section id="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-8 hero-content">
+            <div class="hero-eyebrow">
+              Ignite Collections <i class="bi bi-chevron-right ms-1"></i>
+            </div>
+            <h1 class="hero-title">
+              Power your lifestyle.<br />
+              <span class="text-primary-ignite">Elevate your standard.</span>
+            </h1>
+            <p class="hero-sub">
+              Discover a curated selection of premium gadgets, high-performance apparel, 
+              and professional gear designed for those who demand excellence.
+            </p>
+            <div class="hero-ctas">
+              <a href="#products" class="btn-primary-ignite">
+                Shop Now <i class="bi bi-arrow-right-short"></i>
+              </a>
+              <a href="#features" class="btn-outline-ignite">
+                Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Stats Bar ──────────────────────────────────────────── -->
+    <div class="stats-bar">
+      <div class="container">
+        <div class="row g-3 text-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-item reveal">
+              <span class="stat-num" data-count="12000" data-suffix="+">0</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item reveal">
+              <span class="stat-num" data-count="500" data-suffix="+">0</span>
+              <span class="stat-label">Premium Products</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="stat-item reveal">
+              <span class="stat-num" data-count="48" data-suffix="hr">0</span>
+              <span class="stat-label">Express Delivery</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 reveal reveal-delay-4">
+            <div class="stat-item">
+              <span class="stat-num" data-count="99" data-suffix="%">0</span>
+              <span class="stat-label">Trust Score</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Seller Marketplace Banner ──────────────────────────── -->
+    <section id="culture" class="py-5 reveal">
+      <div class="container">
+        <div class="feature-card p-5 border-0 bg-primary-ignite-soft">
+          <div class="row align-items-center">
+            <div class="col-lg-7">
+              <span class="badge bg-primary mb-3">The Experience</span>
+              <h2 class="display-5 fw-bold mb-4">Curated for the ambitious.</h2>
+              <p class="lead opacity-75">
+                We bridge the gap between premium design and functional utility. 
+                Whether you're equipping your executive suite or upgrading your 
+                daily essentials, Ignite provides a seamless, elite experience.
+              </p>
+              <ul class="list-unstyled mt-4 d-flex flex-column gap-2">
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Hand-picked tech & gadgets</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Professional lifestyle apparel</li>
+                <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Dedicated executive support</li>
+              </ul>
+            </div>
+            <div class="col-lg-5 mt-4 mt-lg-0">
+              <div class="ratio ratio-16x9 rounded-4 overflow-hidden shadow">
+                 <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=800" alt="Premium Experience" class="object-fit-cover">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Products ───────────────────────────────────────────── -->
+    <section id="products">
+      <div class="container">
+        <!-- Header -->
+        <div class="row align-items-end mb-5 reveal">
+          <div class="col-md-8">
+            <h2 class="section-title">The Ignite Collection</h2>
+            <p class="section-sub">
+              Hand-picked tools for professionals who demand the best.
+            </p>
+            <div class="section-line"></div>
+          </div>
+          <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <span id="productCount" class="text-muted small"></span>
+          </div>
+        </div>
+
+        <!-- Filter & Sort Bar -->
+        <div class="filter-sort-row reveal">
+          <div class="filter-bar">
+            <button class="filter-btn active" id="filterAll" data-category="all">
+              <i class="bi bi-grid-3x3-gap-fill"></i> All
+            </button>
+            <button class="filter-btn" data-category="electronics">
+              <i class="bi bi-cpu"></i> Electronics
+            </button>
+            <button class="filter-btn" data-category="accessories">
+              <i class="bi bi-watch"></i> Accessories
+            </button>
+            <button class="filter-btn" data-category="office">
+              <i class="bi bi-briefcase"></i> Office
+            </button>
+            <button class="filter-btn" data-category="stationery">
+              <i class="bi bi-pen"></i> Stationery
+            </button>
+          </div>
+          <div class="sort-wrap">
+            <i class="bi bi-sort-down sort-icon"></i>
+            <select id="sortSelect" aria-label="Sort products">
+              <option value="default">Sort: Featured</option>
+              <option value="price-asc">Price: Low → High</option>
+              <option value="price-desc">Price: High → Low</option>
+              <option value="rating">Top Rated</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="row g-4" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <!-- ── Why Ignite (Features) ──────────────────────────────── -->
+    <section id="features">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <h2 class="section-title">Why Professionals Choose Ignite</h2>
+          <p class="section-sub">
+            The marketplace for high-end gadgets, premium apparel, and business essentials.
+          </p>
+        </div>
+        <div class="row g-4 reveal-stagger">
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-1">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+              <h3 class="feature-title">Curated Quality</h3>
+              <p class="feature-text">
+                Every gadget and piece of apparel is rigorously vetted for quality. 
+                Premium standards, no compromises.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-2">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-lightning-charge"></i>
+              </div>
+              <h3 class="feature-title">Fast Shipping</h3>
+              <p class="feature-text">
+                Your time is valuable. We offer express local and international 
+                delivery on all premium items and tech.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-3">
+            <div class="feature-card">
+              <div class="feature-icon"><i class="bi bi-headset"></i></div>
+              <h3 class="feature-title">Expert Support</h3>
+              <p class="feature-text">
+                Our team of product specialists is available 24/7 to assist 
+                with your purchase or technical questions.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 reveal reveal-delay-4">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <i class="bi bi-building-check"></i>
+              </div>
+              <h3 class="feature-title">Secure Payments</h3>
+              <p class="feature-text">
+                Shop with confidence. We use industry-leading encryption to 
+                protect your personal and payment data.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <div class="newsletter-card">
+          <h2 class="mt-3">Don't miss a drop.</h2>
+          <p>
+            Get notified about exclusive daily deals, new gadget launches, and premium apparel arrivals.
+          </p>
+          <div class="mt-4">
+             <a href="#hero" class="btn-primary-ignite px-5 py-3 fs-5">Shop the Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <!-- ── Footer ─────────────────────────────────────────────── -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <span class="brand-flame"><i class="bi bi-fire me-1"></i>Ignite</span>
+            </div>
+            <p class="footer-tagline">
+              Premium business essentials for the modern professional. Built for
+              ambition.
+            </p>
+            <div class="footer-social">
+              <a href="#" class="social-btn" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" class="social-btn" aria-label="Twitter"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="social-btn" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#" class="social-btn" aria-label="WhatsApp"
+                ><i class="bi bi-youtube"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-2">
+            <p class="footer-heading">Shop</p>
+            <ul class="footer-links">
+              <li><a href="#products">All Products</a></li>
+              <li><a href="#products">Electronics</a></li>
+              <li><a href="#products">Accessories</a></li>
+              <li><a href="#products">Office</a></li>
+              <li><a href="#products">Stationery</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Partners</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <p class="footer-heading">Support</p>
+            <ul class="footer-links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">B2B Accounts</a></li>
+                <li><a href="inbox.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <p class="footer-heading">Legal</p>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">GDPR</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-divider"></div>
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center gap-2"
+        >
+          <p class="footer-copy mb-0">
+            &copy; 2026 Ignite Commerce Inc. | CEO: flamez_Dev02 | All rights reserved.
+          </p>
+          <p class="footer-copy mb-0">Made for professionals. Built with 🔥</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ── Cart Overlay ────────────────────────────────────────── -->
+    <div id="cartOverlay"></div>
+
+    <!-- ── Cart Drawer ─────────────────────────────────────────── -->
+    <div id="cartDrawer" role="dialog" aria-label="Shopping Cart">
+      <div class="cart-header">
+        <h5><i class="bi bi-bag me-2"></i> Your Cart</h5>
+        <button id="cartCloseBtn" aria-label="Close cart">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div id="cartItemsContainer"></div>
+      <div id="cartEmpty" class="d-none">
+        <i class="bi bi-bag-x"></i>
+        <p>Your cart is empty.<br />Add something premium!</p>
+      </div>
+      <div id="cartFooter" class="d-none">
+        <div class="cart-totals">
+          <p><span>Subtotal</span><span id="cartSubtotal">$0.00</span></p>
+          <p><span>Shipping</span><span id="cartShipping">—</span></p>
+          <p><span>Tax (8.5%)</span><span id="cartTax">$0.00</span></p>
+          <p class="cart-grand">
+            <span>Total</span><span id="cartTotal">$0.00</span>
+          </p>
+        </div>
+        <button class="btn-ignite" id="checkoutBtn">
+          <i class="bi bi-credit-card-2-front"></i> Checkout
+        </button>
+        <button id="clearCartBtn">Clear cart</button>
+      </div>
+    </div>
+
+    <!-- ── Product Detail Modal ────────────────────────────────── -->
+    <div
+      class="modal fade"
+      id="productModal"
+      tabindex="-1"
+      aria-label="Product Details"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0" id="productModalBody"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Toast Container ─────────────────────────────────────── -->
+    <div id="toastContainer" aria-live="polite"></div>
+
+    <!-- ── Back to Top ─────────────────────────────────────────── -->
+    <button id="backToTop" aria-label="Back to top">
+      <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Ignite App (Modular) -->
+    <script type="module" src="src/js/app.js"></script>
+  </body>
+</html>
